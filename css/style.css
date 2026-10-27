@@ -1,13 +1,22 @@
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  line-height: 1.6;
-  color: #1f2937;
+section {
+  margin-bottom: 2rem;
 }
 
-header,
-main {
+.card {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tech {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+footer {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem 1rem;
+  color: #6b7280;
 }
