@@ -1,22 +1,172 @@
-section {
-  margin-bottom: 2rem;
+/* ---------- 1. Design settings (change the look here) ---------- */
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f9fafb;
+  --text: #1f2937;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #080808;
+  --accent-dark: #f3f3f3;
+
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-heading: "Merriweather", Georgia, serif;
+
+  --width: 800px;
+  --radius: 8px;
 }
 
+/* ---------- 2. Basics ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--bg);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  line-height: 1.3;
+  margin: 0 0 0.5rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+/* Visible outline for keyboard users */
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ---------- 3. Layout ---------- */
+header,
+main,
+footer {
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+header {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+#role {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+#intro {
+  color: var(--text-muted);
+  max-width: 60ch;
+}
+
+section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+/* ---------- 4. Project cards ---------- */
 .card {
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  padding: 1rem;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
   margin-bottom: 1rem;
 }
 
-.tech {
-  color: #6b7280;
-  font-size: 0.9rem;
+.card h3 {
+  font-size: 1.1rem;
 }
 
+.card p {
+  margin-bottom: 0.5rem;
+}
+
+.tech {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+/* ---------- 5. Skills as small tags ---------- */
+#skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#skill-list li {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.25rem 0.9rem;
+  font-size: 0.9rem;
+}
+/* ---------- Education ---------- */
+#education-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#education-list .card p {
+  margin-bottom: 0.25rem;
+}
+
+#education-list .card p:last-child {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+/* ---------- 6. Contact links ---------- */
+#contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+/* ---------- 7. Footer ---------- */
 footer {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  color: #6b7280;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  color: var(--text-muted);
+  font-size: 0.875rem;
 }
