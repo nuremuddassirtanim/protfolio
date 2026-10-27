@@ -39,6 +39,23 @@ const siteData = {
     'R',
     'Git and GitHub',
   ],
+  education: [
+    {
+      institution: 'American International University-Bangladesh (AIUB)',
+      degree: 'Bachelor of Science in Computer Science and Engineering',
+      year: 'Graduation Year: 2027',
+    },
+    {
+      institution: 'BAF Shaheen College, Chattogram',
+      degree: 'Higher Secondary Certificate (HSC)',
+      year: 'Graduation Year: 2022',
+    },
+    {
+      institution: 'Coxs Bazar Model High School',
+      degree: 'Secondary School Certificate (SSC)',
+      year: 'Graduation Year: 2020',
+    },
+  ],
 
   contacts: [
     { label: 'GitHub', url: 'https://github.com/nuremuddassirtanim' },

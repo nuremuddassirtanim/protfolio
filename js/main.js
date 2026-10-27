@@ -39,6 +39,26 @@ siteData.skills.forEach(function (skill) {
   skillList.append(item);
 });
 
+// Education: make one card for each education entry
+const educationList = document.getElementById('education-list');
+
+siteData.education.forEach(function (education) {
+  const card = document.createElement('li');
+  card.className = 'card';
+
+  const institution = document.createElement('h3');
+  institution.textContent = education.institution;
+
+  const degree = document.createElement('p');
+  degree.textContent = education.degree;
+
+  const year = document.createElement('p');
+  year.textContent = education.year;
+
+  card.append(institution, degree, year);
+  document.getElementById('education-list').append(card);
+});
+
 // Contact links
 const contactList = document.getElementById('contact-list');
 
