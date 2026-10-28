@@ -1,58 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tanim | Portfolio</title>
-    <meta name="description" content="Portfolio of Tanim" />
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nur e Muddassir Tanim | Portfolio</title>
+  <meta name="description" content="I am Nur e Muddassir Tanim, a Computer Science and Engineering student at AIUB">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="site-nav"></div>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
+  <header class="hero">
+    <div id="hero-photo"></div>
+    <div class="hero-text">
       <h1 id="name"></h1>
       <p id="role"></p>
-      <p id="intro"></p>
-    </header>
+      <p id="focus"></p>
+      <ul id="interest-list" class="tags" aria-label="Interests"></ul>
+      <div class="hero-buttons">
+        <a class="button" href="contact.html">Contact Me</a>
+      </div>
+    </div>
+  </header>
 
-    <main>
-      <section id="about">
-        <h2>About</h2>
-        <p id="about-text"></p>
-      </section>
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p id="about-short"></p>
+      <a href="about.html">Read more about me →</a>
+    </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <div id="project-list"></div>
-      </section>
+    <section id="explore">
+      <h2>Explore My Work</h2>
+      <p class="section-intro">Publications, projects, experience and ways to reach me.</p>
+      <div id="explore-list" class="explore-grid"></div>
+    </section>
+  </main>
 
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul id="skill-list"></ul>
-      </section>
+  <div id="site-footer"></div>
 
-      <section id="education">
-        <h2>Education</h2>
-        <div id="education-list"></div>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <ul id="contact-list"></ul>
-      </section>
-    </main>
-
-    <footer>
-      <p id="footer-text"></p>
-    </footer>
-
-    <script src="js/data.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/index.js"></script>
+</body>
 </html>
