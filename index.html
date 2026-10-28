@@ -14,29 +14,36 @@
   <div id="site-nav"></div>
 
   <header class="hero">
-    <div id="hero-photo"></div>
-    <div class="hero-text">
-      <h1 id="name"></h1>
-      <p id="role"></p>
-      <p id="focus"></p>
-      <ul id="interest-list" class="tags" aria-label="Interests"></ul>
-      <div class="hero-buttons">
-        <a class="button" href="contact.html">Contact Me</a>
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1 id="name"></h1>
+        <p id="title"></p>
+        <p id="role"></p>
+        <p id="focus"></p>
+        <ul id="interest-list" class="tags" aria-label="Interests"></ul>
+        <div class="hero-buttons">
+          <a class="button" href="contact.html">Contact Me</a>
+        </div>
       </div>
+      <div id="hero-photo"></div>
     </div>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <p id="about-short"></p>
-      <a href="about.html">Read more about me →</a>
+  <main class="home">
+    <section id="about" class="band">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <p id="about-short" class="about-text"></p>
+        <div id="stat-list" class="stat-grid"></div>
+        <p class="center"><a href="about.html">Read more about me →</a></p>
+      </div>
     </section>
 
-    <section id="explore">
-      <h2>Explore My Work</h2>
-      <p class="section-intro">Publications, projects, experience and ways to reach me.</p>
-      <div id="explore-list" class="explore-grid"></div>
+    <section id="explore" class="band band-soft">
+      <div class="container">
+        <h2 class="section-title">Explore My Work</h2>
+        <div id="explore-list" class="explore-grid"></div>
+      </div>
     </section>
   </main>
 
