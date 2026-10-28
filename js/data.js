@@ -1,11 +1,20 @@
 const siteData = {
   name: 'Nur e Muddassir Tanim',
+  brand: 'N. M. Tanim',
+  title: 'Computer Science & Engineering Student',
+  location: '',
+  stats: [
+    { value: '2', label: 'Projects' },
+    { value: '11', label: 'Skills' },
+    { value: '2027', label: 'Expected Graduation' },
+  ],
   role: 'Computer Science & Engineering Student At AIUB | Exploring AI & Machine Learning | Building My Tech Journey | Python • AI • ML Enthusiast',
   intro: 'I build web projects and explore computer vision and data science.',
 
   // Home page: hero
   photo: 'images/profile.jpg',
-  focus: 'Right now: looking for an internship where I can build real software and learn machine learning.',
+  focus:
+    'Right now: looking for an internship where I can build real software and learn machine learning.',
   interests: [
     'Artificial Intelligence',
     'Machine Learning',
@@ -22,21 +31,25 @@ const siteData = {
     {
       title: 'Publications',
       text: 'Research papers and ongoing research.',
+      icon: 'book',
       link: 'about.html#publications',
     },
     {
       title: 'Projects',
       text: 'Web and data science projects I have built.',
+      icon: 'flask',
       link: 'projects.html',
     },
     {
       title: 'Experience',
       text: 'Internships, roles and activities.',
+      icon: 'briefcase',
       link: 'about.html#experience',
     },
     {
       title: 'Contact',
       text: 'Get in touch for collaboration or questions.',
+      icon: 'mail',
       link: 'contact.html',
     },
   ],
@@ -111,13 +124,25 @@ const siteData = {
 
   // Contact page
   contacts: [
-    { label: 'GitHub', url: 'https://github.com/nuremuddassirtanim' },
-    { label: 'Email', url: 'mailto:nur.etanim@gmail.com' },
+    {
+      label: 'GitHub',
+      url: 'https://github.com/nuremuddassirtanim',
+      icon: 'github',
+      note: 'My code and projects',
+    },
+    {
+      label: 'Email',
+      url: 'mailto:nur.etanim@gmail.com',
+      icon: 'mail',
+      note: 'Best way to reach me',
+    },
     {
       label: 'LinkedIn',
       url: 'https://www.linkedin.com/in/nuremuddassirtanim',
+      icon: 'linkedin',
+      note: 'Professional profile and experience',
     },
   ],
 
-  footer: '© 2026 Nm Tanim',
+  footer: '© 2026 NUR E MUDASSIR TANIM. All rights reserved.',
 };

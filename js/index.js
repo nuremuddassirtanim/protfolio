@@ -1,4 +1,5 @@
 document.getElementById('name').textContent = siteData.name;
+document.getElementById('title').textContent = siteData.title;
 document.getElementById('role').textContent = siteData.role;
 document.getElementById('focus').textContent = siteData.focus;
 document.getElementById('about-short').textContent = siteData.aboutShort;
@@ -30,6 +31,12 @@ if (siteData.photo) {
 } else {
   showInitials();
 }
+
+// Colored number cards
+const statList = document.getElementById('stat-list');
+siteData.stats.forEach(function (stat, index) {
+  statList.append(createStatCard(stat, index));
+});
 
 // Explore My Work cards
 const exploreList = document.getElementById('explore-list');
