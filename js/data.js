@@ -8,7 +8,7 @@ const siteData = {
     { value: '11', label: 'Skills' },
     { value: '2027', label: 'Expected Graduation' },
   ],
-  role: 'Computer Science & Engineering Student At AIUB | Exploring AI & Machine Learning | Building My Tech Journey | Python • AI • ML Enthusiast',
+  role: 'Computer Science & Engineering Student At AIUB | Exploring AI & Machine Learning | Building My Tech Journey | AI • Data Science Enthusiast',
   intro: 'I build web projects and explore computer vision and data science.',
 
   // Home page: hero
@@ -18,6 +18,7 @@ const siteData = {
   interests: [
     'Artificial Intelligence',
     'Machine Learning',
+    'Data Science',
     'Computer Vision',
     'Web Development',
   ],
@@ -94,12 +95,11 @@ const siteData = {
   ],
 
   // Empty lists show "coming soon" on the About page.
-  // Remove the // to add an item.
   publications: [
     // { title: 'Paper title', venue: 'Journal or conference', year: '2027', link: 'https://...' },
   ],
   experience: [
-    // { role: 'Intern', organization: 'Company', period: '2027', description: 'What you did.' },
+    // { role: 'Intern', organization: 'Company', period: '2027', description: 'Worked on ...', link: 'https://...' },
   ],
 
   // Projects page
@@ -123,6 +123,15 @@ const siteData = {
   ],
 
   // Contact page
+  // Projects page: panel under the cards
+  callout: {
+    title: 'Future Innovation',
+    text: "Continuously exploring new frontiers in technology and innovation. If you have ideas for collaborative projects or want to contribute to our innovation initiatives, we'd love to hear from you.",
+    buttons: [
+      { label: 'Propose a Project', url: 'mailto:nur.etanim@gmail.com' },
+      { label: 'View My GitHub', url: 'https://github.com/nuremuddassirtanim' },
+    ],
+  },
   contacts: [
     {
       label: 'GitHub',
