@@ -153,5 +153,5 @@ const siteData = {
     },
   ],
 
-  footer: '© 2026 NUR E MUDASSIR TANIM. All rights reserved.',
+  footer: '©2026 NUR E MUDDASSIR TANIM. All rights reserved.',
 };
